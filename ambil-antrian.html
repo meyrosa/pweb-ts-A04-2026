@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambil Antrian</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="guard">
+  <div class="container">
+    <header class="topbar">
+  <div>
+    <h1>Ambil nomor antrian</h1>
+    <p class="muted small">Pilih jenis layanan untuk mengambil nomor antrian.</p>
+    <p class="muted small" id="userInfo"></p>
+  </div>
+  <div class="row">
+    <a class="btn" href="layar.html">Layar Antrian</a>
+    <a class="btn dark" href="ambil-antrian.html">Ambil Nomor</a>
+    <button class="btn" id="logoutBtn">Keluar</button>
+  </div>
+</header>
+    <div id="result" class="card result" hidden></div>
+    <div id="takeGrid" class="screen-grid"></div>
+    <p id="updated" class="muted small"></p>
+  </div>
+  <script type="module" src="dist/ambil.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="guard">
+  <div class="container">
+    <header class="topbar">
+      <div><h1>Dashboard Admin</h1><p class="muted small" id="userInfo"></p></div>
+      <div class="row">
+        <button class="btn danger-o" id="resetBtn">Reset Antrian</button>
+        <button class="btn" id="logoutBtn">Keluar</button>
+      </div>
+    </header>
+    <div class="cols">
+      <section class="card">
+        <h2>Jenis antrian</h2>
+        <form id="typeForm" class="row" novalidate>
+          <input id="typeCode" maxlength="1" placeholder="Kode" style="width:70px">
+          <input id="typeName" class="grow" placeholder="Contoh: Farmasi">
+          <button class="btn dark" type="submit">Tambah</button>
+        </form>
+        <p id="typeError" class="error" hidden></p>
+        <div id="typeList"></div>
+      </section>
+      <section class="card">
+        <h2>Terbitkan tiket</h2>
+        <form id="ticketForm" class="row">
+          <select id="ticketType" class="grow"></select>
+          <select id="ticketPriority">
+            <option>Normal</option><option>Lansia</option><option>Disabilitas</option><option>VIP</option>
+          </select>
+          <button class="btn dark" type="submit">Terbitkan</button>
+        </form>
+        <p id="ticketMsg" class="muted small"></p>
+        <div id="ticketList"></div>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="dist/admin.js" defer></script>
+</body>
+</html>

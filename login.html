@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="login-wrap">
+    <form id="loginForm" class="card login-card" novalidate>
+      <h1>Masuk</h1>
+      <p class="muted small">Halaman ini untuk mengakses Dashboard Admin dan Panel Operator. Layar Kiosk tidak memerlukan login.</p>
+      <label for="username">Username</label>
+      <input id="username" autocomplete="username" placeholder="emilys">
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password">
+      <p id="loginError" class="error" hidden></p>
+      <button id="loginBtn" class="btn primary block" type="submit">Masuk</button>
+      <p class="muted small">Login diperlukan untuk mengakses semua halaman: Dashboard Admin, Panel Operator, Layar Antrian, dan Ambil Antrian.</p>
+    </form>
+  </main>
+  <script type="module" src="dist/login.js" defer></script>
+</body>
+</html>
